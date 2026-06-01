@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX/UI-дизайн с нуля</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header__container">
+    
+    <!-- ЛОГО -->
+    <div class="logo">
+      UX<span>Course</span>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="nav" id="nav">
+      <a href="#about" class="nav-link">О курсе</a>
+      <a href="#program" class="nav-link">Программа</a>
+      <a href="#reviews" class="nav-link">Отзывы</a>
+      <a href="#form" class="nav-link">Регистрация</a>
+    </nav>
+
+    <button type="button" class="btn header__btn" data-scroll="form">
+      Записаться
+    </button>
+
+    <!-- BURGER -->
+    <div class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero__container">
+    
+    <div class="hero__content">
+      <h1>Стань UX/UI-дизайнером с нуля</h1>
+      <p>Практический курс с реальными проектами и портфолио</p>
+      <button type="button" class="btn btn--light" data-scroll="form">
+        Записаться на курс
+      </button>
+    </div>
+
+    <div class="hero__image">
+      <img src="images/hero-ui-design.jpg" alt="UX UI дизайн интерфейс">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section id="about" class="features section">
+  <div class="container">
+    <h2>Почему выбрать этот курс</h2>
+
+    <div class="features__grid">
+
+      <div class="feature-card">
+        <img src="images/practice.jpg" alt="Практика UX">
+        <h3>Практика</h3>
+        <p>Работаешь над реальными кейсами и задачами</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="images/mentor.jpg" alt="Куратор UX">
+        <h3>Куратор</h3>
+        <p>Опытный дизайнер помогает на каждом этапе</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="images/portfolio.jpg" alt="Портфолио дизайна">
+        <h3>Портфолио</h3>
+        <p>Соберёшь проекты для трудоустройства</p>
+      </div>
+
+      <div class="feature-card">
+        <img src="images/online-learning.jpg" alt="Онлайн обучение">
+        <h3>Гибкость</h3>
+        <p>Учишься онлайн в удобное время</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- PROGRAM -->
+<section id="program" class="program section">
+  <div class="container">
+    <h2>Программа курса</h2>
+
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <div class="accordion-header">Модуль 1 — UX</div>
+        <div class="accordion-content">
+          <ul>
+            <li>UX-исследования</li>
+            <li>CJM</li>
+            <li>Персоны</li>
+            <li>Практический проект</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Модуль 2 — UI</div>
+        <div class="accordion-content">
+          <ul>
+            <li>Цвет</li>
+            <li>Типографика</li>
+            <li>Композиция</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Модуль 3 — Figma</div>
+        <div class="accordion-content">
+          <ul>
+            <li>Компоненты</li>
+            <li>Auto Layout</li>
+            <li>Прототипирование</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">Модуль 4 — Адаптив</div>
+        <div class="accordion-content">
+          <ul>
+            <li>Mobile-first</li>
+            <li>Responsive дизайн</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews section">
+  <div class="container">
+    <h2>Отзывы студентов</h2>
+
+    <div class="reviews__grid">
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar"></div>
+          <div>
+            <strong>Анна</strong>
+            <p>UX дизайнер</p>
+          </div>
+        </div>
+        <div class="rating">★★★★★</div>
+        <p>Собрала портфолио и устроилась на работу через 2 месяца</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar"></div>
+          <div>
+            <strong>Иван</strong>
+            <p>UI дизайнер</p>
+          </div>
+        </div>
+        <div class="rating">★★★★★</div>
+        <p>Очень понятная подача и много практики</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="avatar"></div>
+          <div>
+            <strong>Мария</strong>
+            <p>Junior дизайнер</p>
+          </div>
+        </div>
+        <div class="rating">★★★★★</div>
+        <p>Куратор реально помогает, не просто курс</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FORM -->
+<section id="form" class="form-section section">
+  <div class="container">
+    <h2 class="form-title">Записаться на курс</h2>
+
+    <form id="formEl" class="form" novalidate>
+
+      <label for="name" class="visually-hidden">Имя</label>
+      <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+      <label for="email" class="visually-hidden">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+
+      <button type="submit" class="btn">Отправить</button>
+
+      <p id="message" aria-live="polite"></p>
+
+    </form>
+
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta-section section">
+  <div class="container">
+    <h2>Начни карьеру уже сегодня</h2>
+    <p>Освой востребованную профессию и собери портфолио</p>
+    <button type="button" class="btn" data-scroll="form">
+      Записаться
+    </button>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__container">
+    <div>
+      <div class="logo">UX<span>Course</span></div>
+      <p>Онлайн-курс UX/UI-дизайна</p>
+    </div>
+
+    <div>
+      <p>Контакты</p>
+      <p>Email: info@uxcourse.ru</p>
+    </div>
+
+    <div>
+      <p>Соцсети</p>
+      <p>Telegram • Instagram • LinkedIn</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
